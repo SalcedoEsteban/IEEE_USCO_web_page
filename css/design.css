@@ -1,0 +1,806 @@
+body
+{
+	font-size: 16px;
+	font-family:  'Ubuntu', sans-serif;
+	/*background: purple;*/
+	position: relative;
+}
+
+header
+{
+	width: 100%;
+	height: 35px;
+	background: #233D58;
+	position: relative;
+	z-index: 999;
+}
+
+header h1 
+{
+	display: none;
+}
+
+header nav .ioMenuMovil
+{
+	/*display: none;*/
+	height: 25px;
+	width: 40px;
+	cursor: pointer;
+	line-height: 40px;
+	margin: 0px 0px 0px 10px;
+	/*padding-top: -9px;*/
+}
+
+header nav .ioMenuMovil img
+{
+	width: 100%;
+}
+
+header nav #card_menu
+{
+	display: none;
+	position: relative;
+	width: 255px;
+	/*height: 500px;*/
+	background: white;
+	top: -30px;
+	left: 0px;
+	border-right: 3px solid #AFAEAE;
+	border-bottom: 3px solid #AFAEAE;
+	border-radius: 8px;
+	z-index: 999;
+	padding-bottom: 50px;
+}
+
+header nav #card_menu .ioMenuMovil
+{
+	/*background: red;
+	height: 100%;*/
+}
+
+header nav #card_menu #logo_menu
+{
+	background: #AFAEAE;
+	height: 200px;
+	width: 80%;
+	margin: 30px 0px;
+	margin-left: 10%;
+	margin-bottom: 50px;
+	border-radius: 30%;
+	text-align: center;
+	border-right: 3px solid black;
+	border-bottom: 3px solid black;
+}
+
+header nav #card_menu #logo_menu img
+{
+	width: 90%;
+}
+
+header nav #card_menu ul
+{
+	/*background: red;*/
+	margin-top: -20px;
+}
+
+header nav #card_menu ul li
+{
+	list-style: none;
+	font-size: 1.5em;
+	line-height: 37px;
+	font-weight: bold;
+	font-family: 'Ubuntu';
+
+}
+
+header nav #card_menu ul li a
+{
+	text-decoration: none;
+	color: black;
+
+}
+
+header #prev_section,
+header #next_section
+{
+	width: 25px;
+	height: 25px;
+	/*background: red;*/
+	cursor: pointer;
+	/*overflow: hidden;*/
+	margin: 5px;
+	position: absolute;
+	top: 0px;
+	overflow: hidden;
+}
+
+header #prev_section
+{
+	right: 35px;
+}
+
+header #next_section
+{
+	right: 5px;
+}
+
+header #prev_section img,
+header #next_section img
+{
+	width: 150%;
+	top: -7px;
+	position: relative;
+	left: -6px;
+
+}
+
+header #next_section img
+{
+	transform: rotate(180deg);
+}
+
+
+#slider
+{
+	width: 100%;
+	position: relative;
+	height: 0px;
+	/*background: black;*/
+}
+
+#slider section.slide
+{
+	position: absolute;
+	width: 100%;
+	top: -20px;
+	left: 0px;
+}
+
+#slider #quienes_somos
+{
+	background: #233D58;
+	font-family: 'Ubuntu', sans-serif;
+	position: relative;
+	text-align: center;
+	/*padding-bottom: 80px;*/
+}
+
+#slider #quienes_somos .mainanimation
+{
+	background: none;
+	width: 100%;
+	/*margin-left: 10%;*/
+	min-height: 445px; /*Esta es la altura de las animaciones*/
+	position: absolute;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: none;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+#slider #quienes_somos .mainlogo
+{
+	background: none;
+	position: relative;
+	/*background: green;*/
+	width: 60vw; /*este es el anocho de lo que esta en el mainlogo, aqui ira la demas info, mision, vision y demás*/
+	margin-left: 20vw;
+	min-height: 555px; /*altura minima del mainlogo*/
+}
+
+#slider #quienes_somos .mainlogo h2
+{
+	font-size: 1.3em;
+	padding-top: 80px;
+	color: white;
+	font-family: 'Ubuntu';
+	font-weight: lighter;
+}
+
+#slider #quienes_somos .mainlogo strong
+{
+	font-size: 1.5em;
+	font-family: 'Ubuntu';
+	font-weight: bold;
+	display: block;
+}
+
+#slider #quienes_somos .mainlogo figure,
+#slider #quienes_somos .mainlogo figure img
+{
+	width: 100%;
+	margin: 0px;
+	/*margin-right: 10%;*/
+
+}
+
+/*#slider #quienes_somos .buttonspage
+{
+	width: 100%;
+	text-align: center;
+	background: white;
+}*/
+
+
+#slider .backgroundimage
+{
+	background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../img/background.jpg') repeat center top;
+	background-size: cover;
+}
+
+#slider .historia
+{
+	width: 80%;
+	margin-left: 10%;
+	background: none;
+	color: white;
+	text-align: justify;
+	/*padding: 15px;*/
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#slider .historia h2
+{
+	text-align: center;
+	padding-top: 5px;
+}
+
+#slider .historia p
+{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	text-align: justify;
+}
+
+#slider #teleologia
+{
+	width:80%;
+	margin-left: 10%;
+	position: relative;
+	background: none;
+}
+
+#slider #teleologia .mision,
+#slider #teleologia .vision
+{
+	/*padding: 20px;*/
+	text-align: justify;
+	background: none;
+	color: white;
+}
+
+#slider #teleologia .mision h2,
+#slider #teleologia .vision h2
+{
+	text-align: center;
+	padding-top: 5px;
+}
+
+#slider #teleologia .mision p,
+#slider #teleologia .vision p
+{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;	
+}
+
+#slider .organigrama
+{
+	width: 80%;
+	margin-left: 10%;
+	position: relative;
+}
+
+#slider .organigrama figure,
+#slider .organigrama figure img
+{
+	width: 100%;
+	margin: 0px;
+}
+
+
+#slider .organigrama
+{
+	background: none;
+	color: white;
+}
+
+
+#slider .staff
+{
+	background: none;
+	color: white;
+	position: relative;
+	margin-top: 20px;
+	width: 100%;
+}
+
+#slider .staff #members figure
+{
+	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+	margin: 0px;
+	margin-bottom: 10px;
+	margin-right: 5px;
+	/*width: 40%;*/
+	padding: 8px;
+	border-radius: 5px;
+}
+
+#slider .staff #members figure img
+{
+	background: white;
+	padding: 20px;
+	border-radius: 50%;
+}
+
+
+#slider .staff #members figure p
+{
+	text-align: center;
+}
+
+
+#slider .staff #members > *
+{
+	display: inline-block;
+}
+
+
+
+#slider .ubicacion
+{
+	color: white;
+}
+
+#slider .rrss
+{
+	background: none;
+	margin-top: 50px;
+	padding-bottom: 25px;
+}
+
+#slider #capitulos
+{
+	/*height: 700px;*/
+	/*background: yellow;*/
+	font-family: 'Ubuntu', sans-serif;
+	position: relative;
+	text-align: center;
+}
+
+#slider #capitulos #structure
+{
+	width: 100%;
+	position: relative;
+}
+
+#slider #capitulos #structure .chapters
+{
+	background: red;
+}
+
+
+#slider #capitulos #structure .chapters #chapter
+{
+	margin: 0px;
+	background: white;
+}
+
+#slider #capitulos #structure .chapters #chapter figure,
+#slider #capitulos #structure .chapters #chapter figure img
+{
+	margin: 0px;
+}
+
+#slider #eventos
+{
+	height: 600px;
+	background: red;
+}
+
+#slider #unete
+{
+	height: 200px;
+	background: blue;
+}
+
+
+#contact_form
+{
+	position: fixed;
+	right: 0px;
+	top: 35px;
+	background: white;
+	width: 300px;
+	//border-top: 1px solid black;
+	box-shadow: 0px 0px 3px #9F9E9E;
+	font-family: Ubuntu;
+	font-weight: bold;
+	height: 100vh;
+	z-index: 999;
+	display: none;
+}
+
+#contact_form #close_form
+{
+	position: absolute;
+	//background: red;
+	width: 30px;
+	height: 30px;
+	left: 85%;
+	top: 190px;
+}
+
+#contact_form #close_form:hover
+{
+	cursor: pointer;
+}
+
+#contact_form #close_form img
+{
+	top: 5px;
+	left: 9px;
+	//background: blue;
+	position: relative;
+}
+
+#contact_form figure
+{
+	height: 150px;
+	width: 100%;
+	margin: 0px;
+	padding: 10px;
+	text-align: center;
+	background: #29abe2;
+}
+
+#contact_form figure img
+{
+	height: 100%;
+	margin: 0px;
+}
+
+#contact_form p
+{
+	margin: 20px;
+	//background: red;
+	width: 80%;
+	margin-left: 5%;
+	text-align: center;
+	font-weight: bold;
+}
+
+#contact_form input
+{
+	display: block;
+	margin: 20px;
+	border: none;
+	border-bottom: 2px solid gray;
+	width: 90%;
+	margin-left: 5%;
+	padding-bottom: 3px;
+	margin-bottom: 45px;
+	font-weight: bold;
+}
+
+#contact_form #button
+{
+	background: #29abe2;
+	border: none;
+	padding: 8px 0px;
+	border-radius: 5px;
+}
+
+#contact_button
+{
+	width: 60px;
+	height: 60px;
+	background: #29abe2;
+	border-radius: 50%;
+	z-index: 80;
+	right: 10px;
+	position: fixed;
+	top: 80vh;
+}
+
+#contact_button:hover
+{
+	cursor: pointer;
+}
+
+#contact_button img
+{
+	position: relative;
+	bottom: -8px;
+	right: -3px;
+}
+
+footer
+{
+	
+}
+
+
+@media screen and (min-width: 480px)
+{
+	body
+	{
+		/*background: red;*/
+	}
+
+	/*header
+	{
+		z-index: 999;
+	}*/
+
+	/*#slider #quienes_somos .mainlogo
+	{
+		width: 270px; //anchura fija del main logo en las pantallas de 480px minmimo de ancho
+		left: 50%;
+		margin-left: 135px;
+	}*/
+	
+	#slider section.slide
+	{
+		/*position: absolute;
+		width: 100%;*/
+		top: -20px;
+		/*left: 0px;*/
+	}
+
+	#slider #quienes_somos .mainlogo h2
+	{
+		font-size: 1.5em;
+	}
+
+	#slider #quienes_somos .mainlogo figure img
+	{
+		width: 230px;
+		margin: 0px;
+	}
+
+}
+
+@media screen and (min-width: 600px)
+{
+	body
+	{
+		/*background: orange;*/
+	}
+}
+
+@media screen and (min-width: 767px)
+{
+	body
+	{
+		/*background: yellow;*/
+	}
+
+	header
+	{
+		height: 60px;
+	}
+
+	header h1
+	{
+		display: inline-block;
+		width: 38%;
+		/*background: red;*/
+		margin: 0px;
+		height: 50px;
+		margin-left: 10px;
+		line-height: 50px;
+		min-width: 200px;
+	}
+
+	header h1 > *
+	{
+		display: inline-block;
+		vertical-align: middle;
+		text-decoration: none;
+		color: white;
+		font-size: 0.7em;
+		/*margin: 0px 3px;*/
+	}
+
+	header h1 figure
+	{
+		height: 40px;
+		width: 40px;
+		margin: 0px;
+		background: white;
+		border-radius: 20%;
+		/*background: green;*/
+	}
+
+	header h1 figure img
+	{
+		width: 100%;
+	}
+
+
+	header nav
+	{
+		display: inline-block;
+		vertical-align: middle;
+		width: 60%;
+		position: relative;
+		/*background: red;*/
+	}
+
+	header nav #showMenu,
+	header nav #hideMenu
+	{
+		display: none;
+	}
+
+
+	header nav #card_menu
+	{
+		display: inline-block;
+		border: none;
+		background: none;
+		position: relative;
+		top: 0px;
+		width: 100%;
+		/*background: green;*/
+		text-align: right;
+		padding-bottom: 0px; 
+	}
+
+	header nav #card_menu figure
+	{
+		display: none;
+	}
+
+
+	header nav #card_menu ul
+	{
+		padding: 0px;
+		margin: 0px;
+		margin-top: -15px;
+
+	}
+
+	header nav #card_menu ul li
+	{
+		display: inline;
+		/*padding-left: 5px;
+		padding-right: 8px;*/
+		width: 75px;
+		/*background: blue;*/
+		text-align: center;
+		font-size: 1.2em;
+		margin: 7px;
+	}
+
+
+	header nav #card_menu ul li a
+	{
+		color: white;
+	}
+
+
+	header #prev_section,
+	header #next_section
+	{
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		background: #29abe2;
+		right: 40px;
+		z-index: 999;
+		border-radius: 50%;		
+	}
+
+	header #prev_section
+	{
+		top: 115px;
+	}
+
+	header #next_section
+	{
+		top: 190px;
+	}
+
+	header #prev_section img,
+	header #next_section img
+	{
+		width: 100%;
+		top: 0px;
+		left: 0px;
+	}
+
+	/*#slider #teleologia
+	{
+		background: red;
+		width: 80%;
+		margin-left: 10%;
+	}*/
+
+	#slider #teleologia .mision,
+	#slider #teleologia .vision
+	{
+		display: inline-block;
+		background: none;
+		width: 40%;
+		color: white;
+	}
+
+	#slider .ubicacion
+	{
+		color: white;
+		width: 50%;
+		margin-left: 25%;
+	}
+	
+	#contact_form
+	{
+		top: 60px;
+		width: 400px;
+	}
+
+	#contact_button
+	{
+		right: 35px;
+	}
+}
+
+@media screen and (min-width: 950px)
+{
+	body
+	{
+		/*background: green;*/
+	}
+}
